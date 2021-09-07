@@ -1,7 +1,4 @@
 # GHM
-This dataset readme.txt file was generated on 2021-08-20 by Ali Lenjani.
-
-
 GENERAL INFORMATION
 
 1. Title of Dataset: GLOBAL HEALTH MONITORING
