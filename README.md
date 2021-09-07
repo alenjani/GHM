@@ -5,7 +5,8 @@
 GLOBAL HEALTH MONITORING
 
 ### About
-The Global Health Monitoring project aims to predict health indicators with satellite images using Deep Learning methods.
+The Global Health Monitoring project aims to predict health indicators using a multimodal dataset., including satellite imagery, environmental, infrastructure, and socio-economical statistical features. 
+This dataset is broken down into two primary types: 1) Satellite imagery 2) Structured dataset, which includes environmental, infrastructure, and socio-economical statistical features. 
 
 ### Authors: 
 Pascal Geldsetzer, Ali Lenjani, Turan Orenbas, Dorothee Mersch, Gautam M.
