@@ -169,7 +169,7 @@ print(latnum, longnum)
 plt.imshow(rgb)
 
 
-
+<p>
 ### Instruction for merging the data and preparing it for the modeling: 
 
 The DHS data have the "ground truth" PSU-level health indicator values that we are trying to predict. So typically, we only need to select the column of the interest, e.g., BMI, which is represented as "V445", and merge it with the GEE, HF, and SE features. The GEE and HF data are already merged together and shared here: https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv. To merge the SE data, we need to match the "DHSCC" column of the GEE_HF file with the "Country Code" column of the SE data.
