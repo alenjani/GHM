@@ -33,6 +33,8 @@ Multiple locations in different regions, including Africa, South America, South 
 
 3. https://storage.cloud.google.com/global-health-monitoring/se.csv
 
+4. https://storage.cloud.google.com/global-health-monitoring/bmi_landsat_dataset
+
 ### Links to the source that data is derived from: 
 1. https://dhsprogram.com/
 2. https://developers.google.com/earth-engine/datasets
@@ -57,6 +59,18 @@ C. Healthcare Facility (HF) features which are extracted from a dataset publishe
 D. Country-level Socio-Economic (SE) features are collected from multiple sources, including UNdata, World Bank Open Data, Kaggle, and Eurostat Nations. The type of features in this dataset are highly diverse, including: 'Mean years of schooling, 'Gross national income (GNI) per capita', 'GNI per capita rank minus HDI rank', 'Change in HDI rank 2010-2015', 'Average annual HDI growth 2000-2010','Average annual HDI growth 2010-2015', 'Gender Development Index value','Gender Development Index Group', 'Human Development Index (HDI) Female', 'Human Development Index (HDI) Male', 'Life expectancy at birth Female', 'Life expectancy at birth Male', 'Mean years of schooling Female', 'Mean years of schooling Male','Estimated gross national income per capita Female', 'Estimated gross national income per capita Male', 'Share of seats in parliament (% held by women)', 'Labour force participation rate (% ages 15 and older) Female '. 
 Link to the data: https://storage.cloud.google.com/global-health-monitoring/se.csv
 
+E. Satellite Images are stored as .tfrecord files. A single image is stored in a single tfrecord. The tfrecord contains 8 channels (bands) representing blue, green, red, NIR, SWIR ... and additionally the features of interest (country code, image number, cluster code, longitude and latitude of the cluster, year and BMI value) for safety purposes. The height and width of the images are 225px  representing 6.75 kilometers (1px = 30m). These images were taken by the Landsat satellites (NASA):
+- Satellite: Landsat (NASA)
+- Size of Image: 225 x 225px
+- Size of ROI: 6.75 x 6.75km (1px = 30m)
+- Multispectral image: blue, green, red, NIR, SWIR1, SWIR2, TEMP1
+- Additional channels: country code, image number, cluster code, longitude and latitude of the cluster, year and BMI value
+- Data type: tfrecord
+- You can find the BMI Satellite Imagery Dataset on Google storage:
+- Path: https://storage.cloud.google.com/global-health-monitoring/bmi_landsat_dataset
+- Dataset: Each survey per country and year has its own folder
+- Folders: Each survey per country and year has a varying number of images
+
 ### Instruction for merging the data and preparing it for the modeling: 
 
 The DHS data have the "ground truth" PSU-level health indicator values that we are trying to predict. So typically, we only need to select the column of the interest, e.g., BMI, which is represented as "V445", and merge it with the GEE, HF, and SE features. The GEE and HF data are already merged together and shared here: https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv. To merge the SE data, we need to match the "DHSCC" column of the GEE_HF file with the "Country Code" column of the SE data.
@@ -71,7 +85,7 @@ The DHS data have the "ground truth" PSU-level health indicator values that we a
 
 
 
-
+<!-- 
 # Satellite Imagery Dataset
 
 ## Description of the Dataset
@@ -94,7 +108,7 @@ The satellite images are stored as .tfrecord files. A single image is stored in 
 You can find the BMI Satellite Imagery Dataset on Sherlock:
 - Path: https://storage.cloud.google.com/global-health-monitoring/bmi_landsat_dataset
 - Dataset: Each survey per country and year has its own folder
-- Folders: Each survey per country and year has a varying number of images
+- Folders: Each survey per country and year has a varying number of images -->
 
 ### Technical infos
 If you have problems reading the tfrecords you can use the following code provided by us to access the tfrecords:
