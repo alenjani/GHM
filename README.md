@@ -167,7 +167,7 @@ for i in range(len(red)):
     
 print(latnum, longnum)
 plt.imshow(rgb)
-```python
+```python```
 
 
 
