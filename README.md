@@ -3,7 +3,7 @@ GENERAL INFORMATION
 
 1. Title of Dataset: GLOBAL HEALTH MONITORING
 
-2. Author Information
+2. Authors Information
 
 		Name: Ali Lenjani
 		Institution: Stanford University
@@ -13,6 +13,8 @@ GENERAL INFORMATION
    		Name: Pascal Geldsetzer
 		Institution: Stanford University
 		Email: pgeldsetzer@stanford.edu
+
+## Credit: Pascal Geldsetzer, Ali Lenjani, Turan Orenbas, Dorothee Mersch, Gautam M.
 
 
 3. Date of data collection (single date, range, approximate date): Multiple sources of data are collected at different times, which are elaborated for each feature in the dataset
@@ -73,9 +75,7 @@ Instruction for merging the data and preparing it for the modeling:
 
 
 
-# BMI Satellite Imagery Dataset
-
-## Credit: Pascal Geldsetzer, Ali Lenjani, Turan Orenbas, Dorothee Mersch, Gautam M.
+# Satellite Imagery Dataset
 
 ## About
 The Satellite Imagery Project aims to predict health indicators with satellite images using Deep Learning methods. Our first health indicator of interest is the Body Mass Index (BMI) because of its availability and relative abundance in our health indicator dataset.
