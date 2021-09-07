@@ -71,20 +71,6 @@ E. Satellite Images are stored as .tfrecord files. A single image is stored in a
 - Dataset: Each survey per country and year has its own folder
 - Folders: Each survey per country and year has a varying number of images
 
-### Instruction for merging the data and preparing it for the modeling: 
-
-The DHS data have the "ground truth" PSU-level health indicator values that we are trying to predict. So typically, we only need to select the column of the interest, e.g., BMI, which is represented as "V445", and merge it with the GEE, HF, and SE features. The GEE and HF data are already merged together and shared here: https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv. To merge the SE data, we need to match the "DHSCC" column of the GEE_HF file with the "Country Code" column of the SE data.
-
-
-
-
-
-
-
-
-
-
-
 <!-- 
 # Satellite Imagery Dataset
 
@@ -182,3 +168,9 @@ for i in range(len(red)):
 print(latnum, longnum)
 plt.imshow(rgb)
 ```python
+
+
+
+### Instruction for merging the data and preparing it for the modeling: 
+
+The DHS data have the "ground truth" PSU-level health indicator values that we are trying to predict. So typically, we only need to select the column of the interest, e.g., BMI, which is represented as "V445", and merge it with the GEE, HF, and SE features. The GEE and HF data are already merged together and shared here: https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv. To merge the SE data, we need to match the "DHSCC" column of the GEE_HF file with the "Country Code" column of the SE data.
