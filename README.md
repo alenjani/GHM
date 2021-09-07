@@ -4,6 +4,7 @@ GENERAL INFORMATION
 1. Title of Dataset: GLOBAL HEALTH MONITORING
 
 2. Author Information
+
 		Name: Ali Lenjani
 		Institution: Stanford University
 		Address: 1701 Page Mill Dr, Palo Alto
@@ -26,8 +27,11 @@ SHARING/ACCESS INFORMATION
 1. Links to publications that cite or use the data: 
 
 2. Links to the accessible locations of the data: 
+
 		1. https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv
+		
 		2. https://storage.cloud.google.com/global-health-monitoring/dhs.csv
+		
 		3. https://storage.cloud.google.com/global-health-monitoring/se.csv
 
 3. Links to the source that data is derived from: 
