@@ -53,7 +53,7 @@ This dataset is consists of multiple categories of features, including:
 A. The "ground truth" data comes from the Demographic and Health Surveys (DHS). These are nationally representative household surveys that provide the GPS for each sampled primary sampling unit (PSU; these can be thought of as villages in rural areas and neighborhoods in urban areas). For privacy reasons, the DHS jitters the GPS of each PSU by 0-2km in urban areas and 0-5km in rural areas. The DHS features include the date of the surveyed PSU and PSU-level summary measures of health indicators. For more details, please see this link: https://www.dhsprogram.com/pubs/pdf/DHSG4/Recode6_DHS_22March2013_DHSG4.pdf. Link to our PSU-level dataset: https://storage.cloud.google.com/global-health-monitoring/dhs.csv. We the DHS dataset to calculate multiple health indicators including:
 - Mean_BMI: mean female body mass index
 - Stunted_Rate: % of children under 5 years who are stunted 
-- Under5_Mortality_Rate: % of under-5 mortality
+- Under5_Mortality_Rate: the probability (expressed as a rate per 100 live births) of a child born in the past five years dying before reaching the age of five years
 - Fully_Vaccinated_Children_Rate: % of children 1-4 years of age, who were fully vaccinated for BCG, DPT, polio, and measles
 - Unmet_Need_Rate: % of women who do not want to become pregnant and are sexually active but are not using contraception
 - Skilled_Birth_Attendant_Rate: % of live births in the preceding 5 years that were attended by a skilled birth attendant
