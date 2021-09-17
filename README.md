@@ -50,7 +50,15 @@ Multiple locations in different regions, including Africa, South America, South 
 
 This dataset is consists of multiple categories of features, including: 
 
-A. The "ground truth" data comes from the Demographic and Health Surveys (DHS). These are nationally representative household surveys that provide the GPS for each sampled primary sampling unit (PSU; these can be thought of as villages in rural areas and neighborhoods in urban areas). For privacy reasons, the DHS jitters the GPS of each PSU by 0-2km in urban areas and 0-5km in rural areas. The DHS features include the date of the surveyed PSU and PSU-level summary measures of health indicators. For more details, please see this link: https://www.dhsprogram.com/pubs/pdf/DHSG4/Recode6_DHS_22March2013_DHSG4.pdf. Link to our PSU-level dataset: https://storage.cloud.google.com/global-health-monitoring/dhs.csv
+A. The "ground truth" data comes from the Demographic and Health Surveys (DHS). These are nationally representative household surveys that provide the GPS for each sampled primary sampling unit (PSU; these can be thought of as villages in rural areas and neighborhoods in urban areas). For privacy reasons, the DHS jitters the GPS of each PSU by 0-2km in urban areas and 0-5km in rural areas. The DHS features include the date of the surveyed PSU and PSU-level summary measures of health indicators. For more details, please see this link: https://www.dhsprogram.com/pubs/pdf/DHSG4/Recode6_DHS_22March2013_DHSG4.pdf. Link to our PSU-level dataset: https://storage.cloud.google.com/global-health-monitoring/dhs.csv. We the DHS dataset to calculate multiple health indicators including:
+- Mean_BMI: mean female body mass index
+- Stunted_Rate: % of children under 5 years who are stunted 
+- Under5_Mortality_Rate: % of under-5 mortality
+- Fully_Vaccinated_Children_Rate: % of children 1-4 years of age, who were fully vaccinated for BCG, DPT, polio, and measles
+- Unmet_Need_Rate: % of women who do not want to become pregnant and are sexually active but are not using contraception
+- Skilled_Birth_Attendant_Rate: % of live births in the preceding 5 years that were attended by a skilled birth attendant
+
+To access these health indicators please use this link: https://storage.cloud.google.com/global-health-monitoring/hi.csv
 
 B. Google Earth Engine (GEE) features extracted from GEE public data archived imagery and scientific datasets from different sources, including Landsat, Sentinel, and MODIS. These features are spatially and temporally matched with the DHS dataset if possible. Multiple statistical features are extracted from the 2km * 2km patches with the center located at PSU GPS. If the feature is not available for the exact date on which the DHS data were collected, then it is matched to the closest date for which the GEE feature is available. The columns in this dataset are named in the following fashion: "feature name _ statistical measure @ dataset address on GEE & timestamped(if the feature is not available for the exact time that the survey occurred)." For more information about each feature, please use this link "https://developers.google.com/earth-engine/datasets/*" and replace the * with the "dataset address on GEE" term of the column's name. Link to the data: https://storage.cloud.google.com/global-health-monitoring/gee_hf.csv
 		
