@@ -9,7 +9,7 @@ The Global Health Monitoring project aims to predict health indicators using a m
 This dataset is broken down into two primary types: 1) Satellite imagery 2) Structured dataset, which includes environmental, infrastructure, and socio-economical statistical features. 
 
 ### Authors: 
-Pascal Geldsetzer, Ali Lenjani, Turan Orenbas, Dorothee Mersch, Gautam M.
+Pascal Geldsetzer, Ali Lenjani, Turan Orenbas, Dorothee Mersch, Gautam Machiraju.
 
 
 ### Date of data collection (single date, range, approximate date): 
